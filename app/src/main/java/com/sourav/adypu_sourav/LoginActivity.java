@@ -1,20 +1,28 @@
+
 package com.sourav.adypu_sourav;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+        import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+
+        import android.content.Intent;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.EditText;
+        import android.widget.TextView;
+
+public class Login extends AppCompatActivity {
+
+    EditText edtUsername,edtPassword;
+    TextView signUp;
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-}
+        setContentView(R.layout.activity_login);
 
-
-public class LoginActivity extends AppCompatActivity {
         edtUsername=findViewById(R.id.edtUsername);
         edtPassword=findViewById(R.id.edtPassword);
         signUp=findViewById(R.id.txtSignUp);
@@ -27,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 Bundle bundle=new Bundle();
                 bundle.putString("callFrom","login");
 
-                Intent intent=new Intent(LoginActivity.this,RegistrationActivity.class);
+                Intent intent=new Intent(Login.this,MainActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
