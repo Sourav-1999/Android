@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':recycleractivity', ':recyclerview'
 rootProject.name='ADYPU_SOURAV'
