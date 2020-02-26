@@ -1,11 +1,13 @@
 package com.sourav.recycleractivity;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,6 +68,7 @@ public class VersionAdapter extends RecyclerView.Adapter<VersionAdapter.VersionH
                     }
                 });
 
+                  showDialog();
 
 
                 /*Toast.makeText(context, "position : " + position +
@@ -81,6 +84,22 @@ public class VersionAdapter extends RecyclerView.Adapter<VersionAdapter.VersionH
 
     }
 
+    private void showDialog(){
+        final Dialog dialog=new Dialog(context);
+        dialog.setContentView(R.layout.dialog_logout);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(false);
+        Button btnYes=dialog.findViewById(R.id.btnYes);
+        Button btnNo=dialog.findViewById(R.id.btnNo);
+        dialog.setCancelable(false);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
     @Override
     public int getItemCount() {
         return list.size();
