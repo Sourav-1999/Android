@@ -1,6 +1,10 @@
 package com.sourav.recycleractivity;
 
 public class AndroidVersion {
+
+    private int image;
+    private String name;
+
     public int getImage() {
         return image;
     }
@@ -9,14 +13,11 @@ public class AndroidVersion {
         this.image = image;
     }
 
-    public String getNames() {
-        return names;
+    public String getName() {
+        return name;
     }
 
-    public void setNames(String names) {
-        this.names = names;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    private int image;
-    private String names;
 }

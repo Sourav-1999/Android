@@ -1,4 +1,3 @@
-
 package com.sourav.recycleractivity;
 
 import android.content.Context;
@@ -7,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -26,14 +26,23 @@ public class VersionAdapter extends RecyclerView.Adapter<VersionAdapter.VersionH
     @NonNull
     @Override
     public VersionHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.single,parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_card,parent, false);
         return new VersionHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull VersionHolder holder, int position) {
+    public void onBindViewHolder(@NonNull VersionHolder holder, final int position) {
         holder.getName().setText(list.get(position).getName());
         holder.getImage().setImageResource(list.get(position).getImage());
+
+        holder.getName().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "position : " + position +
+                                " Name : " +list.get(position).getName(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
