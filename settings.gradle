@@ -1,2 +1,6 @@
+<<<<<<< Updated upstream
 include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments'
+=======
+include ':app', ':recycleractivity', ':recyclerview', ':linearlayout'
+>>>>>>> Stashed changes
 rootProject.name='ADYPU_SOURAV'
