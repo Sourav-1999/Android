@@ -1,2 +1,2 @@
-include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments'
+include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments', ':retrofit'
 rootProject.name='ADYPU_SOURAV'
