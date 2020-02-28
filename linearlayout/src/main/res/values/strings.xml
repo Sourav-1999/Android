@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Linearlayout</string>
+    <string name="first_name">FirstName</string>
+    <string name="middle_name">MiddleName</string>
+    <string name="last_name">LastName</string>
+    <string name="d_o_b">DOB</string>
+</resources>

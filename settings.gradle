@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments', ':retrofit'
+=======
+<<<<<<< Updated upstream
+include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments'
+=======
+include ':app', ':recycleractivity', ':recyclerview', ':linearlayout'
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 rootProject.name='ADYPU_SOURAV'
