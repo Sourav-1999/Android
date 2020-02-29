@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments', ':retrofit'
-=======
-<<<<<<< Updated upstream
-include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments'
-=======
-include ':app', ':recycleractivity', ':recyclerview', ':linearlayout'
->>>>>>> Stashed changes
->>>>>>> origin/master
-rootProject.name='ADYPU_SOURAV'
+ include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments', ':retrofit', ':localstorage', ':localstorage', ':localstorage', ':cameraview'
+  include ':app', ':recycleractivity', ':recyclerview', ':navigationdraweractivity', ':fragments'
+ include ':app', ':recycleractivity', ':recyclerview', ':linearlayout'
+ rootProject.name='ADYPU_SOURAV'

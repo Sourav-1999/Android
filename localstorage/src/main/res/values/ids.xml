@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edtUserName" type="id" />
+    <item name="edtPassword" type="id" />
+    <item name="btnSave" type="id" />
+    <item name="btnGet" type="id" />
+    <item name="txtWritesomethinghere" type="id" />
+</resources>
